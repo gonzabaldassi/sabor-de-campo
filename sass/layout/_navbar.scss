@@ -5,17 +5,17 @@
     align-items: center;
     gap: 16px;
 
-    &__link{
-        color: #FFF;
-        font-size: 20px;
-
-        &:hover{
-            color: #4c7a34;
-        }
-    }
-
     &__list{
         position: relative;
+
+        &__link{
+            color: #FFF;
+            font-size: 20px;
+    
+            &:hover{
+                color: #4c7a34;
+            }
+        }
 
         &:hover{
             .navbar__submenu{

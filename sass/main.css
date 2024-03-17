@@ -100,15 +100,15 @@ h3 {
   align-items: center;
   gap: 16px;
 }
-.navbar__link {
+.navbar__list {
+  position: relative;
+}
+.navbar__list__link {
   color: #FFF;
   font-size: 20px;
 }
-.navbar__link:hover {
+.navbar__list__link:hover {
   color: #4c7a34;
-}
-.navbar__list {
-  position: relative;
 }
 .navbar__list:hover .navbar__submenu {
   display: block;
