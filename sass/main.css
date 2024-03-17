@@ -66,7 +66,6 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* logo */
 }
 .header__container {
   padding-top: 20px;
@@ -74,22 +73,22 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-.header .header__title, .header .header__title--green {
+.header__container__logo, .header__container__logo--green {
   text-transform: uppercase;
   color: #FFF;
   font-size: 22px;
   font-weight: bold;
 }
-.header .header__title--green {
+.header__container__logo--green {
   color: #4c7a34;
 }
-.header__check {
+.header__container__navbar__check {
   display: none;
 }
-.header__checkbtn {
+.header__container__navbar__checkbtn {
   display: none;
 }
-.header__menuburger {
+.header__container__navbar__checkbtn__hamburguer {
   height: 40px;
   width: 40px;
 }
