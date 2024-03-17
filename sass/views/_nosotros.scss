@@ -1,0 +1,23 @@
+/* PAGE Nosotros */
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 64px auto;
+}
+
+.nosotros img{
+    max-width: 100%;
+    height: auto;
+}
+
+.nosotros__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nosotros__content p{
+    margin: 8px 0;
+}
