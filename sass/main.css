@@ -34,10 +34,6 @@ h3 {
   font-size: 20px;
 }
 
-.color-green {
-  color: #4c7a34;
-}
-
 .container {
   max-width: 1200px;
   width: 90%;
@@ -70,85 +66,60 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* logo */
 }
-
-.header .container .logo a {
-  color: #FFF;
-  text-transform: uppercase;
-}
-
-/* logo */
-.logo a, .logo span {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-/* Icono */
-.icon-menu {
-  height: 50px;
-  width: 50px;
-}
-
-.icon-menu img {
-  height: 100%;
-  width: 100%;
-}
-
-/* nav-bar */
-.nav {
+.header__container {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.header .header__title, .header .header__title--green {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: bold;
+}
+.header .header__title--green {
+  color: #4c7a34;
+}
+.header__check {
+  display: none;
+}
+.header__checkbtn {
+  display: none;
+}
+.header__menuburger {
+  height: 40px;
+  width: 40px;
+}
 
-.nav-bar {
+/* nav-bar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
 }
-
-#check {
-  display: none;
-}
-
-.checkbtn {
-  display: none;
-}
-
-.checkbtn img {
-  height: 40px;
-  width: 40px;
-}
-
-.nav-bar a {
+.navbar__link {
   color: #FFF;
   font-size: 20px;
 }
-
-.nav-bar a:hover {
+.navbar__link:hover {
   color: #4c7a34;
 }
-
-/* sub-menu */
-.nav-bar li {
+.navbar__list {
   position: relative;
 }
-
-.sub-menu {
-  display: none;
-}
-
-.nav-bar li:hover .sub-menu {
+.navbar__list:hover .navbar__submenu {
   display: block;
   position: absolute;
   top: 100%;
   left: auto;
   right: auto;
 }
-
-.bg-submenu {
+.navbar__submenu {
+  display: none;
   background-color: rgba(105, 100, 100, 0.3137254902);
   padding: 0 5px;
   border-radius: 3px;
