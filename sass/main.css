@@ -160,24 +160,24 @@ h3 {
 }
 
 /*MAIN*/
-/* Section exhibition*/
-.exhibition {
+.main {
+  /* Section exhibition*/
+  /* Section payment-data */
+}
+.main__exhibition {
   margin: 64px auto;
 }
-
-.exhibition .exhibition-title {
+.main__exhibition____title {
   margin: 10px 0;
 }
-
-.exhibition .cards {
+.main__exhibition__cards {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   width: 100%;
 }
-
-.card {
+.main__exhibition__cards__card {
   height: 300px;
   width: 400px;
   display: flex;
@@ -188,36 +188,26 @@ h3 {
   padding: 10px 0 10px 10px;
   gap: 16px;
 }
-
-.card img {
+.main__exhibition__cards__card__img {
   height: 184px;
   width: 184px;
 }
-
-/* Section payment-data */
-#payment-data.container {
+.main__payment {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 64px;
 }
-
-#payment-data .payment-data-info a {
-  color: #696464;
-}
-
-#payment-data .payment-data-info:first-child {
-  background-color: black;
-}
-
-#payment-data .payment-data-info:first-child {
+.main__payment__info:first-child {
   background-color: black;
   padding: 20px;
   border-radius: 8px;
 }
-
-#payment-data .payment-data-info:first-child h3 {
+.main__payment__info__title--white {
   color: #FFF;
+}
+.main__payment__info__link {
+  color: #696464;
 }
 
 /* GALERIA */

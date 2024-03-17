@@ -1,63 +1,66 @@
 /*MAIN*/
-/* Section exhibition*/
-.exhibition{
-    margin:64px auto;
-}
 
-.exhibition .exhibition-title{
-    margin: 10px 0;
-}
+.main{
+    /* Section exhibition*/
+    &__exhibition{
+        margin:64px auto;
 
-.exhibition .cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
+        &____title{
+            margin: 10px 0;
+        }
 
-.card{
-    height: 300px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #8b888849;
-    padding: 10px 0 10px 10px;
-    gap: 16px;
-}
+        &__cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
 
-.card img{
-    height: 184px;
-    width: 184px;
-    
-}
+            &__card{
+                height: 300px;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid #8b888849;
+                padding: 10px 0 10px 10px;
+                gap: 16px;
 
-/* Section payment-data */
-#payment-data.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 64px;
-}
+                &__img{
+                    height: 184px;
+                    width: 184px;
+                }
+            }
+        }
+    }
 
-#payment-data .payment-data-info a{
-    color: #696464;
-}
+    /* Section payment-data */
+    &__payment{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
 
-#payment-data .payment-data-info:first-child{
-    background-color: black;
-}
+        &__info{
+            &:first-child{
+                background-color: black;
+                padding: 20px;
+                border-radius: 8px;
 
-#payment-data .payment-data-info:first-child{
-    background-color: black;
-    padding: 20px;
-    border-radius: 8px;
-}
+            }
 
-#payment-data .payment-data-info:first-child h3{
-    color: #FFF;
+            &__title{
+                &--white{
+                    color: #FFF;
+                }
+            }
+
+            &__link{
+                color: #696464
+            }
+        }
+    }
 }
 
 /* GALERIA */
