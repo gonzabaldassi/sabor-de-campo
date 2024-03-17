@@ -13,35 +13,35 @@
 </head>
 <body>
     <header class="header">
-        <div class="container nav">
-            <div class="logo">
-                <a href="../index.html">Sabor de <span class="color-green">Campo</span> </a>
+        <div class="header__container container">
+            <div >
+                <a href="../index.html" class="header__container__logo">Sabor de <span class="header__container__logo--green">Campo</span> </a>
             </div>
-    
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <img src="../img/menu.png" alt="">
+
+            <nav class="header__container__navbar">
+                <input type="checkbox" id="check" class="header__container__navbar__check">
+                <label for="check" class="header__container__navbar__checkbtn">
+                    <img src="../img/menu.png" alt="" class="header__container__navbar__checkbtn__hamburguer">
                 </label>
-    
-                <ul class="nav-bar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li>
-                        <a href="./productos.html">Productos</a>
-                        <ul class="sub-menu bg-submenu">
-                            <li><a href="./productos.html">Mates</a></li>
-                            <li><a href="./productos.html">Termos</a></li>
-                            <li><a href="./productos.html">Bombillas</a></li>
-                            <li><a href="./productos.html">Accesorios</a></li>
-                            <li><a href="./productos.html">Combos</a></li>
+
+                <ul class="navbar">
+                    <li class="navbar__list"><a href="../index.html" class="navbar__list__link">Inicio</a></li>
+                    <li class="navbar__list">
+                        <a href="./productos.html" class="navbar__list__link">Productos</a>
+                        <ul class="navbar__submenu">
+                            <li class="navbar__list"><a href="./productos.html" class="navbar__list__link">Mates</a></li>
+                            <li class="navbar__list"><a href="./productos.html" class="navbar__list__link">Termos</a></li>
+                            <li class="navbar__list"><a href="./productos.html" class="navbar__list__link">Bombillas</a></li>
+                            <li class="navbar__list"><a href="./productos.html" class="navbar__list__link">Yerbas</a></li>
+                            <li class="navbar__list"><a href="./productos.html" class="navbar__list__link">Combos</a></li>
                         </ul>
                     </li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul><!-- .nav-bar -->
-            </nav>
-        </div>
-    </header><!-- .header -->
+                    <li class="navbar__list"><a href="./nosotros.html" class="navbar__list__link">Nosotros</a></li>
+                    <li class="navbar__list"><a href="./contacto.html" class="navbar__list__link navbar__list__link--active">Contacto</a></li>
+                </ul><!-- .navbar -->
+            </nav><!-- .header__navbar -->
+        </div><!-- .header__container -->
+    </header> <!-- .header -->
 
     <main class="container">
         <section class="contacto">

@@ -110,6 +110,9 @@ h3 {
 .navbar__list__link:hover {
   color: #4c7a34;
 }
+.navbar__list__link--active {
+  color: #619c41;
+}
 .navbar__list:hover .navbar__submenu {
   display: block;
   position: absolute;
