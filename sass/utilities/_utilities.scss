@@ -1,0 +1,23 @@
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #4b4b4b49;
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+
+.divisor{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #696464;
+    opacity: .2;
+}
