@@ -5,19 +5,19 @@
     align-items: center;
     gap: 16px;
     margin: 64px auto;
-}
 
-.nosotros img{
-    max-width: 100%;
-    height: auto;
-}
+    &__img{
+        max-width: 100%;
+        height: auto;
+    }
 
-.nosotros__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.nosotros__content p{
-    margin: 8px 0;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &__text{
+            margin: 8px 0;
+        }
+    }
 }
