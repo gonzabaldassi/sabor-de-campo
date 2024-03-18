@@ -133,36 +133,32 @@ h3 {
   justify-content: space-between;
   margin: 64px auto;
 }
-
-.footer .redes ul li a img {
-  width: 20px;
-  height: 20px;
-}
-
-.footer .footer--category ul {
+.footer__cateogry__menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.footer--category ul li a:hover {
+.footer__cateogry__menu__link:hover {
   color: #4c7a34;
 }
-
-.footer p {
+.footer__copy {
   align-self: end;
 }
-
-.footer .redes ul {
+.footer__redes__menu {
   display: flex;
   justify-content: center;
   gap: 8px;
+}
+.footer__redes__menu__img {
+  width: 20px;
+  height: 20px;
 }
 
 /*MAIN*/
 .main {
   /* Section exhibition*/
   /* Section payment-data */
+  /* GALERIA */
 }
 .main__exhibition {
   margin: 64px auto;
@@ -209,61 +205,47 @@ h3 {
 .main__payment__info__link {
   color: #696464;
 }
-
-/* GALERIA */
-.bento {
+.main__bento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
 }
-
-.bento a img {
+.main__bento__link:nth-child(1) {
+  grid-row: 1/3;
+}
+.main__bento__link:nth-child(4) {
+  grid-column: 2/4;
+}
+.main__bento__link__img {
   width: 100%;
   height: auto;
 }
-
-.bento a img:hover {
+.main__bento__link__img:hover {
   filter: drop-shadow(2px 4px 6px black);
 }
-
-.bento a:nth-child(1) {
-  grid-row: 1/3;
-}
-
-.bento a:nth-child(4) {
-  grid-column: 2/4;
-}
-
-/* Characteristics */
-.characteristics {
+.main__characteristics {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 64px auto;
 }
-
-.characteristics--item {
+.main__characteristics__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-
-.characteristics--item--title {
+.main__characteristics__item__title {
   font-size: 20px;
   margin: 8px auto;
   color: #4B4B4B;
 }
-
-.characteristics--item--desc {
+.main__characteristics__item__desc {
   font-size: 16px;
   margin-bottom: 8px;
 }
-
-/* Category */
-/* Banner-Products */
-.bg {
+.main__bg {
   margin: 64px 0;
   height: 400px;
   width: 100%;
@@ -271,16 +253,13 @@ h3 {
   background-size: cover;
   background-position: center;
 }
-
-.bg-mate {
+.main__bg--mate {
   background-image: url(../img/bannerMate.webp);
 }
-
-.bg-yerba {
+.main__bg--yerba {
   background-image: url(../img/bannerYerba.jpg);
 }
-
-.bg-termo {
+.main__bg--termo {
   background-image: url(../img/bannerTermos.png);
 }
 
@@ -404,29 +383,25 @@ h3 {
 
 /*MEDIA QUERYS*/
 @media (max-width: 768px) {
-  #payment-data.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-  }
-  .characteristics {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
   .header {
     height: 200px;
   }
-  .nav {
+  .header__container {
     position: relative;
   }
-  .nav-bar li:hover .sub-menu {
-    display: none;
+  .header__container__navbar__checkbtn {
+    display: inherit;
   }
-  .nav-bar {
+  .header__container__navbar__checkbtn__hamburguer {
+    cursor: pointer;
+  }
+  .header__container__navbar__check:checked ~ .navbar {
+    left: 0;
+  }
+  .header__container__navbar__check ~ .navbar {
+    transition: left 0.3s ease;
+  }
+  .navbar {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -436,18 +411,28 @@ h3 {
     text-align: center;
     display: block;
   }
-  .nav-bar li {
+  .navbar__list {
     margin: 64px auto;
     line-height: 32px;
   }
-  .nav-bar li a {
+  .navbar__list:hover .sub-menu {
+    display: none;
+  }
+  .navbar__list__link {
     font-size: 20px;
   }
-  .checkbtn {
-    display: inherit;
+  .main__payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
   }
-  #check:checked ~ .nav-bar {
-    left: 0;
+  .main__characteristics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   .footer {
     display: flex;
@@ -457,11 +442,11 @@ h3 {
     margin: 30px auto;
     gap: 8px;
   }
-  .footer p {
+  .footer__copy {
     order: 3;
     align-self: center;
   }
-  .footer .footer--category {
+  .footer__category {
     order: 2;
   }
   .products__cards {
@@ -481,7 +466,7 @@ h3 {
   }
 }
 @media (max-width: 1024px) {
-  .exhibition .cards {
+  .main__exhibition__cards {
     flex-wrap: wrap;
     align-content: center;
   }

@@ -3,29 +3,36 @@
     display: flex;
     justify-content: space-between;
     margin: 64px auto;
-}
 
-.footer .redes ul li a img{
-    width: 20px;
-    height: 20px;
-}
+    &__cateogry{
 
-.footer .footer--category ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-.footer--category ul li a:hover{
-    color:#4c7a34;
-}
+            &__link{
+                &:hover{
+                    color:#4c7a34;
+                }
+            }
+        }
+    }
 
-.footer p{
-    align-self: end;
-}
+    &__copy{
+        align-self: end;
+    }
 
-.footer .redes ul{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+    &__redes{
+        &__menu{
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+
+            &__img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }
