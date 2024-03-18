@@ -271,36 +271,31 @@ h3 {
   gap: 16px;
   margin: 64px auto;
 }
-
-.nosotros img {
+.nosotros__img {
   max-width: 100%;
   height: auto;
 }
-
 .nosotros__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.nosotros__content p {
+.nosotros__content__text {
   margin: 8px 0;
 }
 
 /* PAGE PRODUCT */
-.product {
+.product__container {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   gap: 16px;
   justify-items: center;
 }
-
-.product img {
+.product__container__img {
   max-width: 300px;
 }
-
-.product--content {
+.product__container__content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -312,21 +307,18 @@ h3 {
 .products {
   margin: 64px auto;
 }
-
 .products__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
 }
-
-.products__card {
+.products__cards__card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.products__card img {
+.products__cards__card__img {
   max-width: 180px;
   max-height: auto;
   justify-content: center;
@@ -341,44 +333,28 @@ h3 {
   max-width: 100%;
   margin: 64px auto;
 }
-
-.contacto form {
+.contacto__form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-.contacto form input[type=submit] {
-  width: 20%;
-  margin: 8px auto;
-  cursor: pointer;
-  background-color: rgba(76, 122, 52, 0.4666666667);
-  border-radius: 10px;
-}
-
-.contacto form .button {
-  display: inline;
-}
-
-.contacto__personal {
+.contacto__form__personal {
   display: flex;
 }
-
-.contacto__personal div {
+.contacto__form__personal__name {
   display: flex;
   flex-direction: column;
+}
+.contacto__form__personal__name--margin {
+  margin-right: 8px;
+}
+.contacto__form__btn {
+  margin: 8px auto;
+  background-color: rgba(76, 122, 52, 0.4666666667);
 }
 
 .border {
   border-radius: 10px;
-}
-
-.contacto__personal-margin {
-  margin-right: 8px;
-}
-
-.contacto-margin {
-  margin-top: 8px;
 }
 
 /*MEDIA QUERYS*/
@@ -405,7 +381,7 @@ h3 {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #2c3e50;
+    background: rgba(44, 62, 80, 0.9803921569);
     top: 200px;
     left: -100%;
     text-align: center;
@@ -415,7 +391,7 @@ h3 {
     margin: 64px auto;
     line-height: 32px;
   }
-  .navbar__list:hover .sub-menu {
+  .navbar__list:hover .navbar__submenu {
     display: none;
   }
   .navbar__list__link {
@@ -453,7 +429,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  .products__card img {
+  .products__cards__card__img {
     max-width: 100px;
     max-height: auto;
   }
@@ -461,7 +437,7 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-  .contacto__personal {
+  .contacto__form__personal {
     flex-direction: column;
   }
 }
@@ -470,20 +446,20 @@ h3 {
     flex-wrap: wrap;
     align-content: center;
   }
-  .product {
+  .product__container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
 }
 @media (min-width: 1024px) {
-  .product {
+  .product__container {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  .product img {
+  .product__container__img {
     border-radius: 10px;
   }
   .products__cards {

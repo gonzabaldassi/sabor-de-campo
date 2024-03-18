@@ -1,23 +1,23 @@
 /* PAGE PRODUCTS */
 .products{
     margin: 64px auto;
-}
 
-.products__cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 16px;
-}
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
 
-.products__card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        &__card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
-.products__card img{
-    max-width: 180px;
-    max-height: auto;
-    justify-content: center;
+            &__img{
+                max-width: 180px;
+                max-height: auto;
+                justify-content: center;
+            }
+        }
+    }
 }

@@ -6,43 +6,32 @@
     align-items: center;
     max-width: 100%;
     margin: 64px auto;
-}
 
-.contacto form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    &__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-.contacto form input[type="submit"]{
-    width: 20%;
-    margin: 8px auto;
-    cursor: pointer;
-    background-color: #4c7a3477;
-    border-radius: 10px;
-}
+        &__personal{
+            display: flex;
 
-.contacto form .button{
-    display: inline;
-}
+            &__name{
+                display: flex;
+                flex-direction: column;
 
-.contacto__personal{
-    display: flex;
-}
+                &--margin{
+                    margin-right: 8px;
+                }
+            }
+        }
 
-.contacto__personal div{
-    display: flex;
-    flex-direction: column;
+        &__btn{
+            margin: 8px auto;
+            background-color: #4c7a3477;
+        }
+    }
 }
 
 .border{
     border-radius: 10px;
-}
-
-.contacto__personal-margin{
-    margin-right: 8px;
-}
-
-.contacto-margin{
-    margin-top: 8px;
 }

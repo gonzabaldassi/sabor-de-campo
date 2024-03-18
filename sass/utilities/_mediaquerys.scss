@@ -35,7 +35,7 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background: #2c3e50;
+        background: #2c3e50fa;
         top: 200px;
         left: -100%;
         text-align: center;
@@ -45,10 +45,8 @@
             margin: 64px auto;
             line-height:32px ;
 
-            &:hover{
-                .sub-menu{
-                    display: none;
-                }
+            &:hover .navbar__submenu{
+                display: none;
             }
 
             &__link{
@@ -92,14 +90,18 @@
         }
     }
 
-    .products__cards{
-        grid-template-columns: repeat(2,1fr);
-        gap: 16px;
-    }
+    .products{
+        &__cards{
+            grid-template-columns: repeat(2,1fr);
+            gap: 16px;
 
-    .products__card img{
-        max-width: 100px;
-        max-height: auto;
+            &__card{
+                &__img{
+                    max-width: 100px;
+                    max-height: auto;
+                }
+            }
+        }
     }
 
     .nosotros{
@@ -107,14 +109,18 @@
         flex-direction: column;
     }
 
-    .contacto__personal{
-        flex-direction: column;
+    .contacto{
+        &__form{
+            &__personal{
+                flex-direction: column;
+            }
+        }
+        
     }
 
 }
 
 @media ( max-width: 1024px) {
-
     .main{
         &__exhibition{
             &__cards{
@@ -124,7 +130,7 @@
         }
     }
 
-    .product{
+    .product__container{
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
@@ -132,22 +138,23 @@
 }
 
 @media ( min-width: 1024px) {
-    .product{
+    .product__container{
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+
+        &__img{
+            border-radius: 10px;
+        }
     }
 
-    .product img{
-        border-radius: 10px;
+    .products{
+        &__cards{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 16px;
+        }
     }
-
-    .products__cards{
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 16px;
-    }
-    
 }
