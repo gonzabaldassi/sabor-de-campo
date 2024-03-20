@@ -11,5 +11,6 @@ La Tienda de Mates, Termos y Yerbas es un proyecto que busca ofrecer una platafo
 * **Responsivo:** El diseño responsivo garantiza que la tienda se vea y funcione de manera óptima en una variedad de dispositivos, desde computadoras de escritorio hasta dispositivos móviles.
 
 ## Tecnologías Utilizadas
-* **HTML5 y CSS3:** Las páginas web están desarrolladas utilizando HTML y CSS para asegurar una estructura sólida y un diseño atractivo.
+* **HTML5, CSS3 y SASS:** Las páginas web están desarrolladas utilizando HTML y CSS para asegurar una estructura sólida y un diseño atractivo.
+* **Animate CSS** Se integró la libreria Animate.style para añadirle transición y efecto al logo de la página.
 * **Git y GitHub:** Utilizamos Git para el control de versiones y GitHub para alojar y colaborar en el desarrollo del proyecto de manera eficiente.
