@@ -13,6 +13,6 @@ Cabe aclarar que es un proyecto meramente personal para poder practicar las dist
 * **Responsivo:** El diseño responsivo garantiza que la tienda se vea y funcione de manera óptima en una variedad de dispositivos, desde computadoras de escritorio hasta dispositivos móviles.
 
 ## Tecnologías Utilizadas
-* **HTML5, CSS3 y SASS:** Las páginas web están desarrolladas utilizando HTML y CSS para asegurar una estructura sólida y un diseño atractivo.
+* **HTML5, SASS y BEM:** Las páginas web están desarrolladas utilizando HTML, CSS3 y el preprocesador SASS para asegurar una estructura sólida y un diseño atractivo. También se utilizó la metodología BEM para asignarle los nombres a la clases, teniendo así un código mejor estructurado y entendible. 
 * **Animate CSS:** Se integró la libreria Animate.style para añadirle transición y efecto al logo de la página.
 * **Git y GitHub:** Se utilizó Git para el control de versiones y GitHub para alojar y colaborar en el desarrollo del proyecto de manera eficiente.
