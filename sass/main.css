@@ -453,6 +453,7 @@ h3 {
 }
 .footer__copy {
   align-self: end;
+  text-align: center;
 }
 .footer__redes__menu {
   display: flex;
@@ -497,6 +498,9 @@ h3 {
 .main__exhibition__cards__card__img {
   height: 184px;
   width: 184px;
+}
+.main__exhibition__cards__card__content {
+  align-self: self-start;
 }
 .main__payment {
   display: flex;

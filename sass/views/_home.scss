@@ -31,6 +31,10 @@
                     height: 184px;
                     width: 184px;
                 }
+
+                &__content{
+                    align-self: self-start;
+                }
             }
         }
     }
