@@ -15,4 +15,4 @@ Cabe aclarar que es un proyecto meramente personal para poder practicar las dist
 ## Tecnologías Utilizadas
 * **HTML5, SASS y BEM:** Las páginas web están desarrolladas utilizando HTML, CSS3 y el preprocesador SASS para asegurar una estructura sólida y un diseño atractivo. También se utilizó la metodología BEM para asignarle los nombres a la clases, teniendo así un código mejor estructurado y entendible. 
 * **Animate CSS:** Se integró la libreria Animate.style para añadirle transición y efecto al logo de la página.
-* **Git y GitHub:** Se utilizó Git para el control de versiones y GitHub para alojar y colaborar en el desarrollo del proyecto de manera eficiente.
+* **Git y GitHub:** Se utilizó Git para el control de versiones y GitHub para alojar el desarrollo del proyecto de manera eficiente.
