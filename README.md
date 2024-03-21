@@ -10,7 +10,7 @@ Cabe aclarar que es un proyecto meramente personal para poder practicar las dist
 ## Características Destacadas
 * **Diseño Atractivo:** La interfaz de usuario está cuidadosamente diseñada para proporcionar una experiencia visualmente agradable y fácil de usar.
 * **Catálogo Amplio:** Ofrecemos una amplia gama de productos, incluyendo mates de diferentes materiales y estilos, termos de diversas capacidades y diseños, así como una cuidadosa selección de yerbas de alta calidad.
-* **Responsivo:** El diseño responsivo garantiza que la tienda se vea y funcione de manera óptima en una variedad de dispositivos, desde computadoras de escritorio hasta dispositivos móviles.
+* **Responsive:** El diseño responsive garantiza que la tienda se vea y funcione de manera óptima en una variedad de dispositivos, desde computadoras de escritorio hasta dispositivos móviles.
 
 ## Tecnologías Utilizadas
 * **HTML5, SASS y BEM:** Las páginas web están desarrolladas utilizando HTML, CSS3 y el preprocesador SASS para asegurar una estructura sólida y un diseño atractivo. También se utilizó la metodología BEM para asignarle los nombres a la clases, teniendo así un código mejor estructurado y entendible. 
